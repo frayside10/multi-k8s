@@ -18,7 +18,7 @@ before_install:
   - docker build -t frayside10/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run -e CI=true frayside10/docker-react npm test   
+  - docker run -e CI=true frayside10/react-test npm test   
 
 deploy:
   provider: script
